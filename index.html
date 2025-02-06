@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fajin's Supermarket</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: url('fajin-storefront.jpg') no-repeat center center; background-size: cover; color: white; padding: 50px; text-align: center; }
+        nav { background: #f4f4f4; padding: 10px; text-align: center; }
+        nav a { margin: 0 15px; text-decoration: none; color: #333; }
+        .container { padding: 20px; text-align: center; }
+        .promo, .products, .contact, .loyalty { margin: 20px 0; }
+        .promo img { width: 200px; height: auto; margin: 10px; }
+        footer { background: #008000; color: white; text-align: center; padding: 10px; position: fixed; width: 100%; bottom: 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Fajin's Supermarket / Bienvenido a Fajin's Supermarket</h1>
+    </header>
+    <nav>
+        <a href="#promo">Promotions / Promociones</a>
+        <a href="#products">Products / Productos</a>
+        <a href="#contact">Contact / Contacto</a>
+        <a href="#loyalty">Loyalty Program / Programa de Lealtad</a>
+    </nav>
+    <div class="container">
+        <section id="promo" class="promo">
+            <h2>Weekly Promotions / Promociones Semanales</h2>
+            <p>Check out our latest deals and discounts! / ¡Mira nuestras últimas ofertas y descuentos!</p>
+            <div>
+                <img src="coca-cola.jpg" alt="Coca Cola"> <p>Coca Cola - $0.99</p>
+                <img src="frosted-flakes.jpg" alt="Frosted Flakes"> <p>Frosted Flakes - $5.99</p>
+                <img src="limes.jpg" alt="Limes"> <p>Limes - 5 for $0.99</p>
+            </div>
+        </section>
+        <section id="products" class="products">
+            <h2>Our Products / Nuestros Productos</h2>
+            <p>Fresh produce, dairy, snacks, and more. / Productos frescos, lácteos, bocadillos y más.</p>
+        </section>
+        <section id="loyalty" class="loyalty">
+            <h2>Join Our Loyalty Program / Únete a Nuestro Programa de Lealtad</h2>
+            <p>Sign up to receive exclusive discounts and special offers! / ¡Regístrate para recibir descuentos exclusivos y ofertas especiales!</p>
+            <form action="mailto:Specials@fajinsupermarket.com" method="post" enctype="text/plain">
+                <label for="name">Name / Nombre:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email / Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <input type="submit" value="Sign Up / Registrarse">
+            </form>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us / Contáctanos</h2>
+            <p>Email: support@supermarket.com | Phone: (123) 456-7890</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Fajin's Supermarket. All rights reserved. / Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
